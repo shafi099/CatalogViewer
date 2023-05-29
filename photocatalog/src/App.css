@@ -1,0 +1,267 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #ddd; */
+  /* text-align: center; */
+}
+@media screen and (min-width: 640px) {
+.App {
+  display: flex;
+  flex-direction: row;
+  /* background-color: #ddd; */
+  margin:6%;
+  padding:2%;
+  border-radius: 20px;
+  gap:1%
+}
+
+.imageSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10%;
+}
+
+.highlight {
+  width: 700px;
+  height: 350px;
+}
+
+.highlight img {
+  width: 700px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1%;
+  margin-top: 1%;
+}
+
+.options button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 0px solid black;
+}
+
+.options button img {
+  width: 20px;
+  height: 20px;
+}
+
+.options button img:hover {
+  opacity:0.5
+}
+
+.imagesOptionsPortion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.imagesOptionsPortion span {
+  width: 95px;
+  height: 75px;
+  border-radius: 14px;
+  filter: brightness(0.5);
+}
+
+.imagesOptionsPortion span.highlighted {
+  filter: brightness(1);
+}
+
+.imagesOptionsPortion span img {
+  width: 95px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.TextPlayPortion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.textPortion {
+  display: flex;
+  flex-direction: column;
+}
+
+.head {
+  font-size: 32px;
+  /* font-family: 'EB Garamond', serif; */
+font-family: 'Lato', sans-serif;
+font-weight: bolder;
+color: rgb(49, 49, 49);
+/* font-family: 'Nunito', sans-serif; */
+/* font-family: 'Nunito Sans', sans-serif; */
+font-family: 'Poppins', sans-serif;
+font-family: 'Space Grotesk', sans-serif;
+}
+
+.desc {
+  font-size: 14px;
+  color: rgba(49, 49, 49, 0.681);
+/* font-family: 'Nunito', sans-serif; */
+/* font-family: 'Nunito Sans', sans-serif; */
+font-family: 'Poppins', sans-serif;
+font-family: 'Space Grotesk', sans-serif;
+}
+
+.playpause {
+  height: 60px;
+  width: 60px;
+}
+
+.playpausebtn {
+  background-color: transparent;
+  border: 0;
+}
+.playpause:hover{
+  opacity:0.7
+}
+}
+
+
+@media screen and (max-device-width: 640px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    /* background-color: #ddd; */
+    margin:6%;
+    padding:2%;
+    border-radius: 20px;
+    gap:1%
+  }
+  
+  .imageSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10%;
+  }
+  
+  .highlight {
+    width: 350px;
+    height: 175px;
+  }
+  
+  .highlight img {
+    width: 350px;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 14px;
+  }
+  
+  .options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1%;
+    margin-top: 1%;
+  }
+  
+  .options button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 0px solid black;
+  }
+  
+  .options button img {
+    width: 15px;
+    height: 15px;
+  }
+  
+  .imagesOptionsPortion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+  }
+  
+  .imagesOptionsPortion span {
+    width: 40;
+    height: 35px;
+    border-radius: 14px;
+    filter: brightness(0.5);
+  }
+  
+  .imagesOptionsPortion span.highlighted {
+    filter: brightness(1);
+  }
+  
+  .imagesOptionsPortion span img {
+    width: 40px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .TextPlayPortion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .textPortion {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .head {
+    font-size: 32px;
+    /* font-family: 'EB Garamond', serif; */
+  font-family: 'Lato', sans-serif;
+  font-weight: bolder;
+  color: rgb(49, 49, 49);
+  /* font-family: 'Nunito', sans-serif; */
+  /* font-family: 'Nunito Sans', sans-serif; */
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
+  }
+  
+  .desc {
+    font-size: 14px;
+    color: rgba(49, 49, 49, 0.681);
+  /* font-family: 'Nunito', sans-serif; */
+  /* font-family: 'Nunito Sans', sans-serif; */
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
+  }
+  
+  .playpause {
+    height: 60px;
+    width: 60px;
+  }
+  
+  .playpausebtn {
+    background-color: transparent;
+    border: 0;
+  }
+  .playpause:hover{
+    opacity:0.7
+  }
+}
