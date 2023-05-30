@@ -5,6 +5,9 @@ body{
   /* background-color: #ddd; */
   /* text-align: center; */
 }
+
+
+
 @media screen and (min-width: 640px) {
 .App {
   display: flex;
@@ -22,7 +25,7 @@ body{
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 10%;
+  /* gap: 10%; */
 }
 
 .highlight {
@@ -92,6 +95,8 @@ body{
 }
 
 .TextPlayPortion {
+
+  /* margin:5%; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -101,6 +106,7 @@ body{
 .textPortion {
   display: flex;
   flex-direction: column;
+  height: 375px;
 }
 
 .head {
@@ -116,7 +122,7 @@ font-family: 'Space Grotesk', sans-serif;
 }
 
 .desc {
-  font-size: 14px;
+  font-size: 12px;
   color: rgba(49, 49, 49, 0.681);
 /* font-family: 'Nunito', sans-serif; */
 /* font-family: 'Nunito Sans', sans-serif; */
@@ -139,7 +145,555 @@ font-family: 'Space Grotesk', sans-serif;
 }
 
 
-@media screen and (max-device-width: 640px) {
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    margin: 1% auto; /* Updated property */
+    padding: 2%;
+    border-radius: 20px;
+    gap: 1%;
+  }
+  
+  .imageSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10%;
+  }
+  
+  .highlight {
+    width: 700px;
+    height: 365px;
+  }
+  
+  .highlight img {
+    width: 700px;
+    height: 365px;
+    object-fit: cover;
+    border-radius: 14px;
+  }
+  
+  .options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1%;
+    margin-top: 1%;
+  }
+  
+  .options button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 0px solid black;
+  }
+  
+  .options button img {
+    width: 15px;
+    height: 15px;
+  }
+  
+  .imagesOptionsPortion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+  }
+  
+  .imagesOptionsPortion span {
+    width: 90px;
+    height: 75px;
+    border-radius: 14px;
+    filter: brightness(0.5) saturate(0);
+  }
+  
+  .imagesOptionsPortion span.highlighted {
+    filter: brightness(1);
+  }
+  
+  .imagesOptionsPortion span img {
+    width: 90px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 8px;
+    /* filter: brightness(0.5) saturate(0); */
+  }
+.normal{
+    filter: saturate(0);
+  }
+  
+  .TextPlayPortion {
+    margin-top:2%;
+    margin-left:4%;
+    margin-right: 4%;
+    /* margin-top:10px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .textPortion {
+    display: flex;
+    flex-direction: column;
+    height:250px;
+  }
+  
+  .head {
+    font-size: 32px;
+    /* font-family: 'EB Garamond', serif; */
+  font-family: 'Lato', sans-serif;
+  font-weight: bolder;
+  color: rgb(49, 49, 49);
+  /* font-family: 'Nunito', sans-serif; */
+  /* font-family: 'Nunito Sans', sans-serif; */
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
+  }
+  
+  .desc {
+    margin-top: 20px;;
+    font-size: 14px;
+    color: rgba(49, 49, 49, 0.681);
+  /* font-family: 'Nunito', sans-serif; */
+  /* font-family: 'Nunito Sans', sans-serif; */
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
+  }
+  
+  .playpause {
+    height: 60px;
+    width: 60px;
+  }
+  
+  .playpausebtn {
+    background-color: transparent;
+    border: 0;
+  }
+  .playpause:hover{
+    opacity:0.7
+  }
+  
+}
+
+
+@media screen and (min-width: 640px) and (max-width: 800px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    margin: 2% auto; /* Updated property */
+    padding: 2%;
+    border-radius: 20px;
+    gap: 1%;
+  }
+  
+  .imageSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10%;
+  }
+  
+  .highlight {
+    width: 500px;
+    height: 245px;
+  }
+  
+  .highlight img {
+    width: 500px;
+    height: 245px;
+    object-fit: cover;
+    border-radius: 14px;
+  }
+  
+  .options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1%;
+    margin-top: 1%;
+  }
+  
+  .options button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 0px solid black;
+  }
+  
+  .options button img {
+    width: 15px;
+    height: 15px;
+  }
+  
+  .imagesOptionsPortion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+  }
+  
+  .imagesOptionsPortion span {
+    width: 70px;
+    height: 55px;
+    border-radius: 14px;
+    filter: brightness(0.5) saturate(0);
+  }
+  
+  .imagesOptionsPortion span.highlighted {
+    filter: brightness(1);
+  }
+  
+  .imagesOptionsPortion span img {
+    width: 70px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 8px;
+    /* filter: brightness(0.5) saturate(0); */
+  }
+.normal{
+    filter: saturate(0);
+  }
+  
+  .TextPlayPortion {
+    margin-left:4%;
+    margin-right: 4%;
+    margin-top:15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .textPortion {
+    
+    display: flex;
+    flex-direction: column;
+    height:275px;
+  }
+  
+  .head {
+    font-size: 32px;
+    /* font-family: 'EB Garamond', serif; */
+  font-family: 'Lato', sans-serif;
+  font-weight: bolder;
+  color: rgb(49, 49, 49);
+  /* font-family: 'Nunito', sans-serif; */
+  /* font-family: 'Nunito Sans', sans-serif; */
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
+  }
+  
+  .desc {
+   margin-top: 1%;
+    font-size: 14px;
+    color: rgba(49, 49, 49, 0.681);
+  /* font-family: 'Nunito', sans-serif; */
+  /* font-family: 'Nunito Sans', sans-serif; */
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
+  }
+  
+  .playpause {
+    height: 60px;
+    width: 60px;
+  }
+  
+  .playpausebtn {
+    background-color: transparent;
+    border: 0;
+  }
+  .playpause:hover{
+    opacity:0.7
+  }
+  
+}
+@media screen and (min-width: 560px) and (max-width: 640px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    margin: 2% auto; /* Updated property */
+    padding: 2%;
+    border-radius: 20px;
+    gap: 1%;
+  }
+  
+  .imageSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10%;
+  }
+  
+  .highlight {
+    width: 500px;
+    height: 245px;
+  }
+  
+  .highlight img {
+    width: 500px;
+    height: 245px;
+    object-fit: cover;
+    border-radius: 14px;
+  }
+  
+  .options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1%;
+    margin-top: 1%;
+  }
+  
+  .options button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 0px solid black;
+  }
+  
+  .options button img {
+    width: 15px;
+    height: 15px;
+  }
+  
+  .imagesOptionsPortion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+  }
+  
+  .imagesOptionsPortion span {
+    width: 70px;
+    height: 55px;
+    border-radius: 14px;
+    filter: brightness(0.5) saturate(0);
+  }
+  
+  .imagesOptionsPortion span.highlighted {
+    filter: brightness(1);
+  }
+  
+  .imagesOptionsPortion span img {
+    width: 70px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 8px;
+    /* filter: brightness(0.5) saturate(0); */
+  }
+.normal{
+    filter: saturate(0);
+  }
+  
+  .TextPlayPortion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .textPortion {
+    margin-left:4%;
+    margin-right: 4%;
+    margin-top:10px;
+    display: flex;
+    flex-direction: column;
+    height:275px;
+  }
+  
+  .head {
+    font-size: 32px;
+    /* font-family: 'EB Garamond', serif; */
+  font-family: 'Lato', sans-serif;
+  font-weight: bolder;
+  color: rgb(49, 49, 49);
+  /* font-family: 'Nunito', sans-serif; */
+  /* font-family: 'Nunito Sans', sans-serif; */
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
+  }
+  
+  .desc {
+    margin-top:10px;
+    font-size: 14px;
+    color: rgba(49, 49, 49, 0.681);
+  /* font-family: 'Nunito', sans-serif; */
+  /* font-family: 'Nunito Sans', sans-serif; */
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
+  }
+  
+  .playpause {
+    height: 60px;
+    width: 60px;
+  }
+  
+  .playpausebtn {
+    background-color: transparent;
+    border: 0;
+  }
+  .playpause:hover{
+    opacity:0.7
+  }
+  
+}
+@media screen and (min-width: 410px) and (max-width: 560px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    margin: 3% auto; 
+    padding: 2%;
+    border-radius: 20px;
+    gap: 1%;
+  }
+  
+  .imageSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10%;
+  }
+  
+  .highlight {
+    width: 400px;
+    height: 245px;
+  }
+  
+  .highlight img {
+    width: 400px;
+    height: 245px;
+    object-fit: cover;
+    border-radius: 14px;
+  }
+  
+  .options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1%;
+    margin-top: 1%;
+  }
+  
+  .options button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 0px solid black;
+  }
+  
+  .options button img {
+    width: 15px;
+    height: 15px;
+  }
+  
+  .imagesOptionsPortion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+  }
+  
+  .imagesOptionsPortion span {
+    width: 55px;
+    height: 45px;
+    border-radius: 14px;
+    filter: brightness(0.5) saturate(0);
+  }
+  
+  .imagesOptionsPortion span.highlighted {
+    filter: brightness(1);
+  }
+  
+  .imagesOptionsPortion span img {
+    width: 55px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 8px;
+    /* filter: brightness(0.5) saturate(0); */
+  }
+.normal{
+    filter: saturate(0);
+  }
+  
+  .TextPlayPortion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .textPortion {
+    margin-left:4%;
+    margin-right: 4%;
+    margin-top:4%;
+    display: flex;
+    flex-direction: column;
+    height:275px;
+  }
+  
+  .head {
+    font-size: 32px;
+    /* font-family: 'EB Garamond', serif; */
+  font-family: 'Lato', sans-serif;
+  font-weight: bolder;
+  color: rgb(49, 49, 49);
+  /* font-family: 'Nunito', sans-serif; */
+  /* font-family: 'Nunito Sans', sans-serif; */
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
+  }
+  
+  .desc {
+    margin-top: 3%;
+    font-size: 14px;
+    color: rgba(49, 49, 49, 0.681);
+  /* font-family: 'Nunito', sans-serif; */
+  /* font-family: 'Nunito Sans', sans-serif; */
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
+  }
+  
+  .playpause {
+    height: 60px;
+    width: 60px;
+  }
+  
+  .playpausebtn {
+    background-color: transparent;
+    border: 0;
+  }
+  .playpause:hover{
+    opacity:0.7
+  }
+  
+}
+@media screen and (max-device-width: 410px) {
   .App {
     display: flex;
     flex-direction: column;
@@ -232,12 +786,17 @@ font-family: 'Space Grotesk', sans-serif;
   }
   
   .textPortion {
+    margin-left:4%;
+    margin-right: 4%;
+    /* margin-top:10px; */
+    margin-top: 20px;
     display: flex;
+    height:400px;
     flex-direction: column;
   }
   
   .head {
-    font-size: 32px;
+    font-size: 22px;
     /* font-family: 'EB Garamond', serif; */
   font-family: 'Lato', sans-serif;
   font-weight: bolder;
@@ -249,6 +808,7 @@ font-family: 'Space Grotesk', sans-serif;
   }
   
   .desc {
+    margin-top: 10px;
     font-size: 14px;
     color: rgba(49, 49, 49, 0.681);
   /* font-family: 'Nunito', sans-serif; */
